@@ -210,12 +210,12 @@ function* messageChannelHandler(channel: Channel<MessageChannelPayload>) {
 function isValidDomain(domain: string): boolean {
   const regex1 = new RegExp("/(.+?)[.]manabie.com$");
   const regex2 = new RegExp("/(.+?)[.]web.app$");
-  const regex3 = new RegExp("/(.+?)[.]manabie.io$");
+  const regex3 = new RegExp("/(.+?)[.]study-doctor.com$");
   const regex4 = new RegExp("/(.+?)[.]manabie.net$");
   if (
     (window.location.origin == "http://localhost" ||
       window.location.origin ==
-        "https://appsmith.local-green.manabie.io:31600" ||
+        "https://appsmith.local-green.study-doctor.com:31600" ||
       regex3.test(window.location.origin)) &&
     domain.indexOf("localhost") > -1
   ) {
